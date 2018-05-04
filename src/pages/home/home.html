@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar >
+      <ion-title>Weather App</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding class ="homepage">
+  <ion-grid *ngIf="Weather">
+    <ion-row>
+      <ion-col width-50 offset-25>
+          <h2 class="loaction">{{weather.display_locstion.full}}</h2>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
